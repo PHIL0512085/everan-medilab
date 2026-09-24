@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://everan-medilab.com/sitemap.xml
