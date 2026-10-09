@@ -769,11 +769,13 @@ export function App() {
         <Hero />
         <QuickFacts />
         <SearchBand />
-        <About />
+        {/* 「關於我們」與「檢驗空間」排在同一個 About 區塊裡，
+            位置放在「為什麼選長安」之後——先講服務與信任，再講我們是誰。 */}
         <Services />
         <Process />
         <Privacy />
         <Why />
+        <About />
         <FaqSection />
         <Visit />
         <CtaBand />

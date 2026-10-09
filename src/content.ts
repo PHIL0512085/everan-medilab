@@ -73,6 +73,9 @@ export const allergyTestingHref = `${import.meta.env.BASE_URL}allergy-testing.ht
    資料來源是 src/data/testCatalog.ts，不要手動改那一份。 */
 export const testCatalogHref = `${import.meta.env.BASE_URL}test-catalog.html`;
 
+/* 常規健檢與影像專頁（public/routine-checkup.html），同樣是獨立靜態檔。 */
+export const routineCheckupHref = `${import.meta.env.BASE_URL}routine-checkup.html`;
+
 /* 專題專頁是「頁面裡的頁面」：首頁只用一個區塊導流，搜尋索引也吃同一份資料，
    避免新增一個專頁時漏掉其中一邊。 */
 export type TopicPage = {
@@ -330,6 +333,9 @@ export const serviceGroups: ServiceGroup[] = [
     summary:
       "日常最常需要的抽血與 X 光攝影，就近在社區完成，不必到大醫院排隊等排程；A／B／C 健檢組合可依年齡與風險挑選。",
     includes: ["X 光攝影", "抽血檢驗", "成人健檢"],
+    href: routineCheckupHref,
+    linkLabel: "常規健檢與影像完整說明",
+    hrefNote: "A／B／C 組合・X 光攝影",
     pricePanelId: "price-checkup",
   },
   {
